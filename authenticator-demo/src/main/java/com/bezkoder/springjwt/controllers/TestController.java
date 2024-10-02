@@ -24,12 +24,12 @@ public class TestController {
   @GetMapping("/mod")
   @PreAuthorize("hasRole('MODERATOR')")
   public String moderatorAccess() {
-    return "Moderator Board.";
+    return "Moderator Board - updated by sujit";
   }
 
   @GetMapping("/admin")
   @PreAuthorize("hasRole('ADMIN')")
   public String adminAccess() {
-    return "Admin Board - Changed by Sumit";
+    return "Admin Board - updated by sujit";
   }
 }
